@@ -4,7 +4,7 @@
 #include <iostream>
 using namespace std;
 
-
+/*   ------------------流标识提取程序-----------------------   */
 /*   ------------------by  611-----------------------   */
 
 
@@ -250,7 +250,6 @@ int main()
         else
         {
             fseek(pFile,ptk_header->caplen-20,1);
-            //cout<<"))))))))))))))))))))))";
             continue;
         }
     } // end while
@@ -264,7 +263,7 @@ int main()
     cout<<dec<<pkt_num-1;
     cout<<"个\n";
     cout<<"写入dat文件的数据包总数为："<<dec<<dat_pkt_num-1;
-    return 0;
+    
 }
 
 
